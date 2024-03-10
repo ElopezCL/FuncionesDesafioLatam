@@ -20,16 +20,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
       if (!regex.test(nombre)) {
         errNombre.textContent = 'Error: El Nombre es requerido';
-      }if(!regex.test(asunto)){
+      } else if(!regex.test(asunto)){
         errAsunto.textContent = 'Error: El Asunto es requerido';
-     }if(!regex.test(mensaje)){
+     } else if(!regex.test(mensaje)){
         errMensaje.textContent = 'Error: El Mensaje es requerido';
      }else {
-        msjResultado.textContent = 'Mensaje Enviado con exito!';
+      
         errNombre.textContent = "";
         errAsunto.textContent = "";
         errMensaje.textContent = "";
-
+        msjResultado.textContent = 'Mensaje Enviado con exito!';
       }
     });
   });
